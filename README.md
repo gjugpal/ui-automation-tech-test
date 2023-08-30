@@ -40,6 +40,10 @@ Tests can be run using Maven
 ```shell
 mvn clean test
 ```
+As a pre-requisite, you will need to download Chromedriver for the version of Chrome on your machine. Chromedriver can be downloaded from https://chromedriver.chromium.org/home. Once downloaded, please set the following runtime property in the BrowserManager file (src/test/java/pages/BrowserManager.java:20)
+```java
+System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+```
 
 
 ### Note
